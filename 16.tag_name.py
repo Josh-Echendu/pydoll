@@ -21,7 +21,7 @@ async def check_button_enabled():
         await asyncio.sleep(3)
 
         text_area = await tab.find_or_wait_element(By.XPATH, "(//div[@class='widget-content']/textarea)[1]")
-        tag_name = await tab.execute_script('return arguments[0].tagName;', text_area)
+        tag_name = await tab.execute_script('return argument.tagName;', text_area)
         print(tag_name["result"]["result"]['value'])
 
 
