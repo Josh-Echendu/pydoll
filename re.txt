@@ -1,0 +1,10 @@
+✅ Supported By Options in PyDoll
+Locator Type	Example Usage	Example Expression
+By.ID	await tab.find_or_wait_element(By.ID, "username")	"username"
+By.CLASS_NAME	await tab.find_or_wait_element(By.CLASS_NAME, "btn-primary")	"btn-primary"
+By.NAME	await tab.find_or_wait_element(By.NAME, "email")	"email"
+By.XPATH	await tab.find_or_wait_element(By.XPATH, "//button")	"//button"
+By.CSS_SELECTOR	await tab.find_or_wait_element(By.CSS_SELECTOR, "div.content > span")	"div.content > span"
+By.LINK_TEXT	await tab.find_or_wait_element(By.LINK_TEXT, "Login")	"Login"
+By.PARTIAL_LINK_TEXT	await tab.find_or_wait_element(By.PARTIAL_LINK_TEXT, "Log")	"Log"
+By.TAG_NAME	await tab.find_or_wait_element(By.TAG_NAME, "button")	"button"

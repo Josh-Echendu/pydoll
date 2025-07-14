@@ -1,0 +1,10 @@
+Automate complex portals (banking, insurance, payments)
+
+Scrape JS-heavy apps easily (travel, booking)
+
+Capture hidden API endpoints without guessing
+
+Monitor competitor APIs without reverse-engineering
+
+Run stealth scraping with headless browsers
+
