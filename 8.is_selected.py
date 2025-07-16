@@ -31,6 +31,16 @@ async def check_button_enabled():
         else:
             print("not selected")
 
+        checked_atr = await tab.execute_script("""
+            const select = arguments[0];
+            select.hasAttribute('checked')
+        """, radio_button)
+
+        if checked_atr:
+            print("selected")
+        else:
+            print("not selected")
+
         await asyncio.sleep(5)
         await tab.close()
 

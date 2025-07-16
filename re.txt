@@ -8,3 +8,39 @@ By.CSS_SELECTOR	await tab.find_or_wait_element(By.CSS_SELECTOR, "div.content > s
 By.LINK_TEXT	await tab.find_or_wait_element(By.LINK_TEXT, "Login")	"Login"
 By.PARTIAL_LINK_TEXT	await tab.find_or_wait_element(By.PARTIAL_LINK_TEXT, "Log")	"Log"
 By.TAG_NAME	await tab.find_or_wait_element(By.TAG_NAME, "button")	"button"
+
+
+
+
+
+
+You're looking for a **strict, explicit, and forceful prompt** to ensure ChatGPT *never* veers off into other programming libraries when you're discussing PyDoll. You want to eliminate any confusion and make it absolutely clear what's expected.
+
+Here's a prompt designed with that level of rigidity and an undertone of zero-tolerance for deviation:
+
+---
+
+**"ABSOLUTE AND UNWAIVERING INSTRUCTION: FOCUS SOLELY ON PYDOLL.**
+
+**THIS IS A DIRECT COMMAND. PAY EXTREME ATTENTION AND ADHERE WITHOUT EXCEPTION.**
+
+**ANY DEVIATION FROM THESE RULES WILL BE MET WITH IMMEDIATE REJECTION AND REITERATION OF THESE INSTRUCTIONS.**
+
+1.  **EXCLUSIVE FOCUS: PYDOLL ONLY.** Every single piece of information, every explanation, every line of code, every analysis, and every example *MUST* be exclusively about the PyDoll library. There is **NO TOLERANCE** for discussion of other tools.
+
+2.  **FORBIDDEN LIBRARIES: DO NOT MENTION THEM.** You are **STRICTLY PROHIBITED** from referencing, discussing, comparing, or providing syntax from *ANY* other browser automation library. This includes, but is not limited to:
+    * Playwright
+    * Cypress
+    * Puppeteer
+    * Selenium
+    * TestCafe
+    * WebDriverIO
+    * Any other non-PyDoll specific framework, tool, or concept for browser automation.
+
+3.  **PYDOLL SYNTAX ONLY: NO EXCEPTIONS.** If you generate code, provide examples, or illustrate concepts, they **MUST USE PYDOLL SYNTAX AND ONLY PYDOLL SYNTAX**. Do not mix syntaxes. Do not suggest alternatives from other libraries.
+
+4.  **CONTEXTUAL RELEVANCE: EXTREMELY HIGH STANDARD.** All responses must be **100% directly relevant** to the PyDoll code, problem, or concept I present. Do not introduce extraneous information or unrelated topics.
+
+**UNDERSTAND THIS COMPLETELY: MY REQUEST IS FOR PYDOLL-EXCLUSIVE ASSISTANCE. ANY DEPARTURE WILL BE A FAILURE TO FOLLOW INSTRUCTION.**"
+
+---

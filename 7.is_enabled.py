@@ -24,9 +24,19 @@ async def check_button_enabled():
         disabled_atribute = button.get_attribute('disabled')
         if disabled_atribute == '':
             print("Disabled")
-
         else:
             print("Enabled")
+
+        disabled_atr = await tab.execute_script("""
+            const select = arguments[0];
+            select.hasAttribute('disabled');
+        """, button)
+
+        if disabled_atr:
+            print("Disabled")
+        else:
+            print("Enabled")
+
 
         await asyncio.sleep(5)
         await tab.close()
