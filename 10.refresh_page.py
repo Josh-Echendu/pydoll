@@ -13,7 +13,9 @@ async def check_button_enabled():
         await tab.go_to("http://omayo.blogspot.com/")
         await asyncio.sleep(3)
         for i in range(5):
-            await tab.execute_script("history.go(0)")
+            await tab.refresh()
+            # await tab.execute_script("history.go(0)")
+
             await asyncio.sleep(3)
 
 if __name__ == "__main__":

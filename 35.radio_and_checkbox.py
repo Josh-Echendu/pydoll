@@ -12,14 +12,14 @@ async def checkbox_radio_button():
         await asyncio.sleep(3)
 
         radio_button = await tab.find_or_wait_element(By.ID, "radio1")
-        await radio_button.click()
 
         is_radio_checked = await tab.execute_script("""
-            const radio = argument[0];
-            radio.hasAttribute("checked");
+            const radio1 = argument;
+            radio1.hasAttribute("checked");
         """, radio_button)
+        print(f"Is radio button checked: {is_radio_checked}")   
 
-        if is_checked:
+        if is_radio_checked:
             print("Radio button is checked")
         else:
             await radio_button.click()
@@ -39,7 +39,7 @@ async def checkbox_radio_button():
 
         await asyncio.sleep(30)
 
-        tab.close()
+        await tab.close()
 
 if __name__ == "__main__":
     asyncio.run(checkbox_radio_button())
