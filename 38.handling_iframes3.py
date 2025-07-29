@@ -7,16 +7,6 @@ from pydoll.commands.page_commands import PageCommands
 from pydoll.commands.dom_commands import DomCommands
 from pydoll.commands.input_commands import InputCommands
 
-async def find_target_frame(tree):
-    if tree['frame'].get("name") == 'iframeResult':
-        print('Result: ', tree['frame'])
-        return tree['frame']
-    for child in tree.get('childFrames', []):
-        result = await find_target_frame(child)
-        if result:
-            return result
-    return None
-
 
 async def center(bounds):
     width = abs(bounds['x1'] - bounds['x2'])

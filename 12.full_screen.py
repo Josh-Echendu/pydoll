@@ -1,6 +1,5 @@
 import asyncio
 from pydoll.browser import Chrome
-import aiofiles
 from pydoll.constants import By
 from pydoll.browser.options import ChromiumOptions
 

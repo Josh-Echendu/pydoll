@@ -102,3 +102,12 @@ Even for arrow keys (like ArrowDown), treating them consistently—as uppercase 
 So your code is correct: uppercase for windows_virtual_key_code, native as-is.
 
 
+
+
+| Action                   | Best Method                        |
+| ------------------------ | ---------------------------------- |
+| Clicking a button        | `call_function_on`                 |
+| Typing into a field      | `dispatch_key_event` (with delays) |
+| Drag-and-drop            | `dispatch_mouse_event`             |
+| Hover to reveal dropdown | `dispatch_mouse_event`             |
+| Checkbox / toggle        | `evaluate(() => element.click())`  |

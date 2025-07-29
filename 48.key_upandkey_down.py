@@ -122,3 +122,7 @@ async def checkbox_radio_button():
 
 if __name__ == "__main__":
     asyncio.run(checkbox_radio_button())
+
+
+number
+., @, /, ?

@@ -104,3 +104,26 @@ if __name__ == "__main__":
 # | `text`                     | `""`          |
 # | `windows_virtual_key_code` | `40`          |
 # | `native_virtual_key_code`  | `40`          |
+
+
+# | Parameter                  | Meaning                                                                 |
+# | -------------------------- | ----------------------------------------------------------------------- |
+# | `windows_virtual_key_code` | The **physical key** code based on a **Windows keyboard layout**        |
+# | `native_virtual_key_code`  | The **physical key** code based on your OS — e.g., **Mac** native codes |
+# | Parameter                  | Value | Why                                                |
+
+# 🔡 You type 'a' (lowercase):
+# | -------------------------- | ----- | -------------------------------------------------- |
+# | `windows_virtual_key_code` | `65`  | You're pressing the **'A' key** on the keyboard    |
+# | `native_virtual_key_code`  | `97`  | `'a'` is ASCII 97, and on macOS it reflects output |
+
+
+
+# 🔠 You type 'A' (uppercase, using Shift):
+# | Parameter                  | Value | Why                                               |
+# | -------------------------- | ----- | ------------------------------------------------- |
+# | `windows_virtual_key_code` | `65`  | Still the **'A' key** physically pressed          |
+# | `native_virtual_key_code`  | `65`  | `'A'` is ASCII 65, which is the actual typed char |
+
+
+# In the dispatch_key_event payload, the code field refers to the physical location of the key on the keyboard — not the character it produces.

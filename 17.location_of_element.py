@@ -15,7 +15,7 @@ async def main():
 
         # Find the search input by name
         search_input = await tab.find_or_wait_element(By.NAME, "search")
-        await tab.
+     
         # Use JS to get bounding box
         script = """
             const rect = argument.getBoundingClientRect();

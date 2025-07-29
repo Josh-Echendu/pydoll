@@ -22,8 +22,6 @@ async def random_hover(tab, bounds):
     await tab._connection_handler.execute_command(move_cmd)
     return 
 
-
-
 async def hover_menu():
     async with Chrome() as browser:
         tab = await browser.start()
